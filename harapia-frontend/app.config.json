@@ -1,7 +1,7 @@
 {
   apps : [
     {
-      name      : "react-app",
+      name      : "Harapia MarketSquare",
       script    : "npx",
       interpreter: "none",
       args: "serve -s build -p 2700"
