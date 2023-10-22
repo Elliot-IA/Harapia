@@ -1,9 +1,10 @@
 import './Tile.css';
 
-const Tile = ()=>{
+const Tile = (props)=>{
+    console.log(props.image);
   return (
     <div className="tile">
-    
+        <img src={props.image}/>
     </div>
   )
 }

@@ -5,34 +5,14 @@ import Backdrop from './components/backdrop.jsx';
 import marketTable from './marketTable';
 
 function App() {
+    console.log("Market Table: " + JSON.stringify(marketTable));
     return (
         <div id="supremeWrapper">
             <Backdrop></Backdrop>
-        
             <div id="tileContainer">
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
-                <Tile></Tile>
+                {[...marketTable.goodList].map((good, index) =>
+                    <Tile image={"../Goods/"+good[0]} cost={good[1]}></Tile>
+                )}
             </div>
         </div>
     );
