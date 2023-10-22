@@ -1,0 +1,74 @@
+#webcam,#imagePlaceholder{
+    margin: 3px;
+    margin-top: 4px;
+    margin-bottom: -125px;
+    border-radius: 15px;
+    border: solid black 1px;
+    border-width: 1px 7px  1px 7px;
+    background-image: url("../images/checkerboard.jpg");
+}
+html, body {margin: 0;height: 100%;overflow: hidden;}
+#QRBoxCode{
+    font-size: 42px;
+    position:fixed;
+    bottom: 4px;
+    left:50%;
+    width: 282px;
+    transform:translateX(-50%);
+    text-shadow: 0px 0px 4px white;
+    font-family: monospace;
+    font-weight: 700;
+    /* border-bottom:#f9f9f9 1px solid; */
+    z-index: 5;
+    background-color: #93ff93;
+    border-radius: 12px 12px 0px 0px;
+    font-style: oblique;
+    padding: 7px;
+    padding-bottom: 0px;
+    text-decoration: underline;
+    border: 2px solid black;
+    border-width: 3px 3px 0px 3px;
+    text-align: center;
+    opacity: 0.8;
+    transition: 599ms;
+    height: 52px;
+}
+#actionLine{font-size: 24px;background-color: white;width: 70vw;position: fixed;top: 26px;margin-left: 50%;padding: 5px 21px 5px 25px;opacity: 0.9;border-radius: 11px;font-weight: 800;transform: translate(-50%);text-align: center;transition: 275ms;}
+.pulse{
+    animation-name: pulse2;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse2 {
+    0%{
+
+    }
+    35%{
+        border-color: black black;
+    }
+    36%{
+        border-color: black #00b6ff;
+    }
+    49%{
+        border-color: black #00b6ff;
+    }
+    100%{
+
+    }
+}
+#imagePlaceholder{
+    width: 610px;
+    height: 443px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#obj_picInput{
+    height: 99vh;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#imagePlaceholder{
+    margin-left: auto;
+    margin-right: auto;
+}

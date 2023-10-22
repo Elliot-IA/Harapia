@@ -1,0 +1,90 @@
+#webcam,#imagePlaceholder{
+    margin: 11px;
+    margin-top: 14px;
+    margin-bottom: -125px;
+    border-radius: 75px;
+    border: solid black 1px;
+    border-width: 1px 7px  1px 7px;
+    background-image: url("../images/checkerboard.jpg");
+    background-size: 72%;
+    transition: 599ms;
+}
+html, body {margin: 0;height: 100%;overflow: hidden;}
+#QRBoxCode{
+    font-size: 84px;
+    position:fixed;
+    bottom: 20px;
+    left:50%;
+    width: 91%;
+    transform:translateX(-50%);
+    text-shadow: 0px 0px 4px white;
+    font-family: monospace;
+    font-weight: 700;
+    /* border-bottom:#f9f9f9 1px solid; */
+    z-index: 5;
+    background-color: #93ff93;
+    border-radius: 12px 12px 0px 0px;
+    font-style: oblique;
+    padding: 20px;
+    padding-bottom: 0px;
+    text-decoration: underline;
+    border: 12px solid black;
+    border-width: 12px 12px 0px 12px;
+    text-align: center;
+    opacity: 0.8;
+    transition: 599ms;
+    height: 96px;
+    border-radius: 45px;
+}
+#actionLine{font-size: 58px;background-color: white;width: 90.5%;position: fixed;top: 15px;margin-left: 50%;padding: 5px 21px 5px 25px;opacity: 0.9;border-radius: 61px;font-weight: 800;transform: translate(-50%);text-align: center;transition: 275ms;border: 1px solid black;padding-bottom: 15px;border-width: 0px 12px 12px 12px;}
+.pulse{
+    animation-name: pulse2;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+}
+@keyframes pulse2 {
+    0%{
+
+    }
+    35%{
+        border-color: black black;
+    }
+    36%{
+        border-color: black #00b6ff;
+    }
+    49%{
+        border-color: black #00b6ff;
+    }
+    100%{
+
+    }
+}
+#imagePlaceholder{
+    width: 610px;
+    height: 443px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#imagePlaceholder{
+    margin-left: auto;
+    margin-right: auto;
+}
+#obj_picInput{
+    width: 97vw;
+    margin-left: -17px;
+}
+
+#camFlipBtn{
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 320px;
+    height: 200px;
+    border-radius: 140px;
+    opacity: 0.8;
+}
+#camFlipImg{
+    width: 310px;
+    height: 200px;
+    
+}
