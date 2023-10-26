@@ -4,6 +4,7 @@ import backdrop from "../images/backdrop.webp";
 const Backdrop = ()=>{
   return (
   <div id="backdropContainer">
+  
     <img className="backdrop" src={backdrop}></img>
     <img className="backdrop" src={backdrop}></img>
     <img className="backdrop" src={backdrop}></img>
@@ -19,6 +20,7 @@ const Backdrop = ()=>{
     <img className="backdrop" src={backdrop}></img>
     <img className="backdrop" src={backdrop}></img>
     <img className="backdrop" src={backdrop}></img>
+    
   </div>
   )
 }
